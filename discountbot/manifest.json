@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "DiscountBOT",
+    "version": "1.0",
+    "description": "Displays banner ads based on Walmart search results.",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.walmart.com/search*"],
+        "js": ["content.js"]
+      }
+    ]
+}
