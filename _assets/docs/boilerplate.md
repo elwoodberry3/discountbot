@@ -8,3 +8,12 @@ Powered by innovative data-driven technology, DiscountBot brings consumers the b
 Founded on the principles of accessibility and convenience, DiscountBot is committed to making smart shopping effortless for everyone.  
 
 For more information, visit www.discountbot.com.
+
+
+
+
+
+# Raw  
+
+We automarically find the best coupons for your cart.
+Save an average of 15% on all yout online purchasing.
