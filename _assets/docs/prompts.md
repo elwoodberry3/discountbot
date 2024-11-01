@@ -1,5 +1,50 @@
 # Prompts  
 
+## Baseline  
+Act as an expert in developing Chrome browser extensions.  
+
+Review the following 'manifest.json' for "DiscountBOT":  
+```json  
+{
+    "manifest_version": 3,
+    "name": "DiscountBOT",
+    "version": "1.0",
+    "description": "Automatically finds and applies the best coupons for your Walmart cart. Monitors the Walmart search results page, identifies search terms, and displays a banner ad based on those terms.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "icons": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.walmart.com/cart*", "*://www.walmart.com/checkout*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+      }
+    }
+}
+```  
+  
+Add a div below <div id="mobile-sticky-footer"> 
+```
+<div>Search For Coupon Codes</div>
+```
+https://www.walmart.com/checkout/review-order
+
+
+
+
+
+
+
+
 ## FOUR  
 Add a div below <div id="mobile-sticky-footer"> 
 ```
